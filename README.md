@@ -1,4 +1,4 @@
 grids-html
 ==========
 
-Grids HTML
+Live demo here: http://eternalistic.github.com/grids-html
