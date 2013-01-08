@@ -1,0 +1,63 @@
+@import "global";
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+#skip-link {
+  margin: 0;
+
+  a {
+    background-color: #666;
+    color: #fff;
+    display: block;
+    padding: 2px 0 3px 0;
+    text-align: center;
+  }
+}
+
+
+// Settings
+#settings {
+	background-color: rgba(58, 58, 58, 0.8);
+	bottom: 0;
+	color: #00CC00;
+	font-family: monospace;
+	left: 0;
+	padding: 2px;
+	position: fixed;
+	text-decoration: none;
+	z-index: 10000;
+
+	a {
+		color: #fff;
+		margin: 0;
+		padding: 5px;
+
+		&:hover,
+		&.active {
+			background: #00CC00;
+		}
+	}
+}
+
+
+// Navigation
+#navigation {
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+
+// Blocks
+.block {
+	background-color: rgba(000, 000, 000, 0.1);
+}

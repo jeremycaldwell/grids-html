@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html><!--<![endif]-->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="cleartype" content="on">
+
+  <title>Grids HMTL: Sample Usage with Grid/Layout Toggle</title>
+
+  <!-- DEFAULT STYLESHEET -->
+  <link rel="stylesheet" href="css/default.css" media="all">
+
+  <!-- GRIDSET --> 
+  <link rel="stylesheet" href="css/gridset/style.css" media="all">
+
+  <!--[if lt IE 9]>
+  <script src="js/html5/html5shiv.js"></script>
+  <script src="js/html5/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body class="two-sidebars">
+<!-- 
+Available body classes. Be sure to remove the sidebar region below that may no longer be needed.
+<body>
+<body class="one-sidebar sidebar-first">
+<body class="one-sidebar sidebar-second">
+<body class="two-sidebars">
+-->
+
+<div id="page">
+
+	<p id="skip-link">
+		<a href="#content" class="element-invisible element-focusable">Skip to content</a>
+	</p>
+
+	<header id="header" role="banner">
+		<div class="block">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
+		</div>
+	</header>
+
+	<nav id="navigation" role="navigation">
+		<div class="block">
+			<ul>
+				<li class="first"><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li class="last"><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav><!-- /nav -->
+
+	<div id="main">
+
+		<div id="content" role="main">
+			<div class="block">
+				<a id="main-content"></a>
+				<h1 class="title" id="page-title">Main content</h1>
+				<artcle class="node">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
+					<p>Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>
+				</artcle>
+			</div>
+		</div><!-- /#content -->
+
+		<aside class="sidebars">
+
+			<section class="region-sidebar-first column sidebar">
+				<div class="block">
+					<h2>Sidebar first</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
+				</div>
+			</section><!-- /sidebar-first -->
+
+			<section class="region-sidebar-second column sidebar">
+				<div class="block">
+					<h2>Sidebar second</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
+				</div>
+			</section><!-- /sidebar-second -->
+
+		</aside><!-- /.sidebars -->
+
+	</div><!-- /#main -->
+
+	<footer id="footer">
+		<div class="block">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
+		</div>
+	</footer><!-- /footer -->
+
+</div><!-- /#page -->
+
+<!-- OPTIONAL SETTINGS AND OVERLAY START -->
+<footer id="settings">
+  <div id="grid-toggle"><strong>Grid overlay:</strong> <span>[CMD + G] or [CTRL + G]</span></div>
+  <strong>Sidebar columns:</strong> 
+   <a href="#both" class="toggle active">Both</a><a href="#first" class="toggle">First</a><a href="#second" class="toggle">Second</a><a href="#none" class="toggle">None</a>
+</footer>
+<link rel="stylesheet" href="css/gridset/gridset-overlay.css" media="all">
+<script src="js/jquery.min.js"></script>
+<script src="js/tools/layoutToggle.js"></script>
+<script src="js/tools/fitWeird.js"></script>
+<script src="js/gridset/gridset-overlay.js"></script>
+<!-- OPTIONAL SETTINGS AND OVERLAY END -->
+
+
+</body>
+</html>

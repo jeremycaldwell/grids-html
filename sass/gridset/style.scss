@@ -1,0 +1,203 @@
+// Import "Normalize", "Global", and "Gridset" first to use the variables below.
+@import "normalize";
+@import "global";
+@import "gridset";
+
+
+// Max width of page (Change as needed)
+$max-width: 1200px;
+
+// Media queries
+@mixin gs-media($prefix){
+  @if $prefix == s  { @media only screen and (min-width: 481px) and (max-width: 767px) { @content; } }
+  @if $prefix == m  { @media only screen and (min-width: 767px) and (max-width: 989px) { @content; } }
+  @if $prefix == l  { @media only screen and (min-width: 990px) { @content; } }
+}
+
+
+// Page
+#page {
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+// Footer (clear)
+#footer {
+  @include gs-span(l, all);
+}
+
+
+// Small
+@include gs-media(s) {
+
+  /*
+   * The layout when there is only one sidebar, the left one.
+   */
+  .sidebar-first {
+    #content {
+      @include gs-float(s, left);
+      @include gs-span(s, 3, 6);
+    }
+    .region-sidebar-first {
+      @include gs-float(s, left);
+      @include gs-span(s, 1, 2);
+    }
+    .region-sidebar-second {
+      display: none;
+    }
+  }
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+  .sidebar-second {
+    #content {
+      @include gs-float(s, left);
+      @include gs-span(s, 1, 4);
+    }
+    .region-sidebar-first {
+      display: none;
+    }
+    .region-sidebar-second {
+      @include gs-float(s, left);
+      @include gs-span(s, 5, 6);
+    }
+  }
+
+   /*
+   * The layout when there are two sidebars.
+   */
+  .two-sidebars {
+    #content {
+      @include gs-float(s, left);
+      @include gs-span(s, 3, 6);
+    }
+    .region-sidebar-first {
+      @include gs-float(s, left);
+      @include gs-span(s, 1, 2);
+    }
+    .region-sidebar-second {
+      @include gs-float(s, left);
+      @include gs-span(s, all); // Clear sidebar and content and span full width
+    }
+  }
+}
+
+
+// Medium
+@include gs-media(m) {
+
+  /*
+   * The layout when there is only one sidebar, the left one.
+   */
+  .sidebar-first {
+    #content {
+      @include gs-float(m, left);
+      @include gs-span(m, 3, 6);
+    }
+    .region-sidebar-first {
+      @include gs-float(m, left);
+      @include gs-span(m, 1, 2);
+    }
+    .region-sidebar-second {
+      display: none;
+    }
+  }
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+  .sidebar-second {
+    #content {
+      @include gs-float(m, left);
+      @include gs-span(m, 1, 4);
+    }
+    .region-sidebar-first {
+      display: none;
+    }
+    .region-sidebar-second {
+      @include gs-float(m, left);
+      @include gs-span(m, 5, 6);
+    }
+  }
+
+   /*
+   * The layout when there are two sidebars.
+   */
+  .two-sidebars {
+    #content {
+      @include gs-float(m, left);
+      @include gs-span(m, 2, 5);
+    }
+    .region-sidebar-first {
+      @include gs-float(m, left);
+      @include gs-span(m, 1, 1);
+
+    }
+    .region-sidebar-second {
+      @include gs-float(m, left);
+      @include gs-span(m, 6, 6);
+    }
+  }
+}
+
+
+// Large
+@include gs-media(l) {
+
+  /*
+   * The layout when there is only one sidebar, the left one.
+   */
+  .sidebar-first {
+    #content {
+      @include gs-float(l, left);
+      @include gs-span(l, 4, 12);
+    }
+    .region-sidebar-first {
+      @include gs-float(l, left);
+      @include gs-span(l, 1, 3);
+    }
+    .region-sidebar-second {
+      display: none;
+    }
+  }
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+  .sidebar-second {
+    #content {
+      @include gs-float(l, left);
+      @include gs-span(l, 1, 9);
+    }
+    .region-sidebar-first {
+      display: none;
+    }
+    .region-sidebar-second {
+      @include gs-float(l, left);
+      @include gs-span(l, 10, 12);
+    }
+  }
+
+   /*
+   * The layout when there are two sidebars.
+   */
+  .two-sidebars {
+    #content {
+      @include gs-float(l, left);
+      @include gs-span(l, 3, 10);
+    }
+    .region-sidebar-first {
+      @include gs-float(l, left);
+      @include gs-span(l, 1, 2);
+    }
+    .region-sidebar-second {
+      @include gs-float(l, left);
+      @include gs-span(l, 11, 12);
+    }
+  }
+}
+
+
+// Import "Grid overlay" last since it uses the variables above. (Remove if not needed)
+@import "grid-overlay";
