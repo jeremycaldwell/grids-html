@@ -1,0 +1,54 @@
+// Grid overlay
+#gridsetoverlaywrap {
+  margin: 0 auto;
+  max-width: $max-width;
+
+  small {
+    font-size: 100%;
+  }
+
+  #gridwrap {
+    color: #fff;
+    display: block;
+    height: 100%;
+    left: auto;
+    max-width: $max-width;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    text-shadow: 0 0 4px #5F0000;
+    width: #{gs-width(l, 1, 12) + '%'};
+    word-wrap: break-word;
+    z-index: -1;
+
+    #gridoverlay {
+
+      .gridset {
+        color: #fff;
+        opacity: .75 !important;
+
+        div {
+          background-color: #FFDEDE;
+          border-color: red !important;
+          display: block;
+          font-size: em(14px) !important;
+          height: 100%;
+          padding: 0;
+          text-align: center;
+          text-shadow: 0 0 4px #5F0000;
+          word-wrap: break-word;
+          z-index: -1;
+
+          small {          
+            border-color: red !important;
+            color: #fff;
+            font-weight: normal;
+          }
+
+        }
+
+      }
+
+    }
+  }
+}

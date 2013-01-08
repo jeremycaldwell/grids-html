@@ -1,0 +1,10 @@
+# Ignore configuration files that may contain sensitive information.
+.htaccess
+
+# Ignore hidden and project files.
+*.project
+*.idea/*
+*.scssc
+.DS_Store
+cache
+.sass-cache
