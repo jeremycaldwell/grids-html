@@ -94,3 +94,28 @@
 .block {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+/* line 67, ../sass/default.scss */
+.github {
+  background-color: rgba(58, 58, 58, 0.8);
+  top: 0;
+  color: #00CC00;
+  font-family: monospace;
+  left: 0;
+  padding: 2px;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  z-index: 10000;
+}
+/* line 80, ../sass/default.scss */
+.github a {
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+}
+/* line 86, ../sass/default.scss */
+.github a:hover, .github a.active {
+  background: #00CC00;
+}
